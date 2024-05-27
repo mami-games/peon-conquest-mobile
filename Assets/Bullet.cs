@@ -16,5 +16,10 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position = new Vector2(transform.position.x + (Speed * Time.deltaTime), transform.position.y);
+
+        if(transform.position.x > 25)
+        {
+            Destroy(gameObject);
+        }
     }
 }
