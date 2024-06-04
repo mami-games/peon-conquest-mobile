@@ -18,7 +18,7 @@ public class GameDirector : MonoBehaviour
     private int upgradeCost = 50;
 
     void Start() {        
-        InvokeRepeating("SpawnEnnemy", spawnTime, spawnDelay);
+        
     }
 
     public void Awake() {
@@ -34,16 +34,18 @@ public class GameDirector : MonoBehaviour
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.M)) {
-            SpawnPeon();
+            //SpawnPeon();
         }
     }
 
     private void SpawnPeon() {
+        /*
         Instantiate(
-                Resources.Load("Prefabs/AlliedPeon"),
-                new Vector3(-20f, 1.5f, Random.Range(-7f, 7f)),
-                new Quaternion(0, 0, 0, 0)
-            );
+            Resources.Load("Prefabs/AlliedPeon"),
+            new Vector3(-20f, 1.5f, Random.Range(-7f, 7f)),
+            new Quaternion(0, 0, 0, 0)
+        );
+        */
     }
 
     public void SpawnEnnemy() {
